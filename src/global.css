@@ -1,0 +1,191 @@
+/* ---------- GLOBAL ---------- */
+:root {
+  --bg: #f9fafb;
+  --text: #111827;
+  --muted: #6b7280;
+
+  --white: #fff;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  --transition: 0.2s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- REUSABLE ---------- */
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-lift {
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  opacity: 0.75;
+}
+
+.card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- PAGE ---------- */
+
+.page {
+  flex: 1;
+  padding: 80px 20px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-content {
+  max-width: 700px;
+}
+
+.page h1 {
+  font-size: clamp(1rem, 3vw, 4rem);
+  margin-bottom: 20px;
+}
+
+.page p,
+.main-text {
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.inline-link {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.page p {
+  font-size: clamp(0.9rem, 1.1vw, 2rem);
+  margin-bottom: 30px;
+}
+
+.main-text {
+  font-size: 1.1rem;
+}
+
+/* ---------- BUTTONS ---------- */
+
+button {
+  border: none;
+  padding: 14px 24px;
+  border-radius: var(--radius-sm);
+
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+  cursor: pointer;
+
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.75;
+}
+
+.page-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* ---------- EVENTS ---------- */
+
+.event-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: #f5f5f5;
+  border-radius: var(--radius);
+}
+
+.event-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.event-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: var(--radius-sm);
+}
+
+/* ---------- WEBSITE COLORS ---------- */
+.main-blue {
+  background: #076f84;
+}
+
+/* How about #18453B */
+.main-yellow{
+  background: #37422f;
+}
+
+.main-brown{
+  background: #b46e44;
+}
+
+.main-green{
+  background: #afb444;
+}
+
+.main-pink{
+  background: #bd6a97;
+}
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+html, head {
+  min-width: 350px;
+  overflow-x: auto;
+}
