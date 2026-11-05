@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import "../components/Home/Home.css";
 import miRiver from "/miRiver.png";
 import madRiver from "/madRiver.jpg";
@@ -27,11 +28,9 @@ export default function Home() {
             Protect, Reconnect, Restore, Sustain, Conserve
           </h1>
 
-          <form action="/calendar">
-            <button className="btn main-blue">
-              Get Involved
-            </button>
-          </form>
+          <Link to="/calendar" className="btn main-blue">
+            Get Involved
+          </Link>
         </div>
       </section>
 
