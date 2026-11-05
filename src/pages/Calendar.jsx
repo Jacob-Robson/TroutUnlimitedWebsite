@@ -1,5 +1,5 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
+import treePlanting from "/treePlanting.jpg";
 
 export default function Calendar() {
   return (
@@ -13,7 +13,7 @@ export default function Calendar() {
         {/* Welcome */}
         <div className="info-section">
           <img
-            src="/treePlanting.jpg"
+            src={treePlanting}
             alt="Planting a Tree"
             className="section-image"
           />

@@ -1,5 +1,7 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
+import treePlanting01 from "/treeplanting01.jpg";
+import treePlanting02 from "/treeplanting02.jpg";
+import treePlanting04 from "/treeplanting04.jpg";
 
 export default function TreePlanting() {
   return (
@@ -29,19 +31,19 @@ export default function TreePlanting() {
         {/* Trout Camp Links */}
         <div className="info-section-three-piece reverse">
           <img
-            src="/treeplanting04.jpg"
+            src={treePlanting04}
             alt="Planting the tree with shovel"
             className="section-image-three-piece"
           />
 
           <img
-            src="/treeplanting01.jpg"
+            src={treePlanting01}
             alt="Group photo of those who came to the tree planting"
             className="section-image-three-piece"
           />
 
           <img
-            src="/treeplanting02.jpg"
+            src={treePlanting02}
             alt="Putting rebar in the ground for tree planting"
             className="section-image-three-piece"
           />

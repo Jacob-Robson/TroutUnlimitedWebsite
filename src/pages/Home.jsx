@@ -1,6 +1,9 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
 import "../components/Home/Home.css";
+import miRiver from "/miRiver.png";
+import madRiver from "/madRiver.jpg";
+import anr from "/anr.jpg";
+import brownTrout from "/brownTrout.png";
 
 export default function Home() {
   return (
@@ -12,7 +15,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="hero">
         <img
-          src="/miRiver.png"
+          src={miRiver}
           alt="Brown Trout"
           className="hero-image"
         />
@@ -38,7 +41,7 @@ export default function Home() {
           {/* Welcome */}
           <div className="info-section">
             <img
-              src="/madRiver.jpg"
+              src={madRiver}
               alt="Mad River"
               className="section-image"
             />
@@ -56,7 +59,7 @@ export default function Home() {
 
           <div className="info-section reverse">
             <img
-              src="/anr.jpg"
+              src={anr}
               alt="Fishing Handling"
               className="section-image"
             />
@@ -73,8 +76,8 @@ export default function Home() {
 
           <div className="info-section">
             <img
-              src="/brookTrout.webp"
-              alt="Brook Trout"
+              src={brownTrout}
+              alt="Brown Trout"
               className="section-image"
             />
 

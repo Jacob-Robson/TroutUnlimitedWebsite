@@ -1,6 +1,7 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import weekendDrone from "/weekendDrone.mp4";
+import weekendAll from "/weekendAll.webp";
 
 export default function WomensWeekend() {
   return (
@@ -18,7 +19,7 @@ export default function WomensWeekend() {
             loop
             playsInline
             className="section-image-camp">
-            <source src="/weekendDrone.mp4" type="video/mp4" />
+            <source src={weekendDrone} type="video/mp4" />
           </video>
 
           <div className="section-text">
@@ -46,7 +47,7 @@ export default function WomensWeekend() {
           </div>
 
           <img
-            src="/weekendAll.webp"
+            src={weekendAll}
             alt="All who attended Women's Weekend 2025"
             className="section-image-camp"
           />

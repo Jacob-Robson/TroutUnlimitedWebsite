@@ -1,6 +1,5 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import dogRiverDay from "/dogriverday.jpg";
 
 export default function DogRiverDay() {
   return (
@@ -14,7 +13,7 @@ export default function DogRiverDay() {
         {/* Dog River Day Tying */}
         <div className="info-section">
           <img
-            src="/dogriverday.jpg"
+            src={dogRiverDay}
             alt="Dog River Day Lineup"
             className="section-image"
           />

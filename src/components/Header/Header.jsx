@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import DownArrow from "/downArrow.png";
+import LogoImproved from "/logoImproved.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +21,7 @@ export default function Header() {
       {/* LOGO */}
       <Link to="/" className="logo-container">
         <img
-          src="/LogoImproved.png"
+          src={LogoImproved}
           alt="Mad Dog Logo"
           className="logo"
           onClick={() => setMenuOpen(false)}
@@ -57,7 +59,7 @@ export default function Header() {
 
               <img
                 className={`smaller-arrow ${conservationOpen ? "rotate" : ""}`}
-                src="/downArrow.png"
+                src={DownArrow}
                 alt="dropdown arrow"
               />
             </div>
@@ -85,7 +87,7 @@ export default function Header() {
 
               <img
                 className={`smaller-arrow ${educationOpen ? "rotate" : ""}`}
-                src="/downArrow.png"
+                src={DownArrow}
                 alt="dropdown arrow"
               />
             </div>

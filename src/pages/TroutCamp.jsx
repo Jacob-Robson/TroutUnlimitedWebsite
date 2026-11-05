@@ -1,6 +1,6 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import troutCamp from "/troutCamp.jpg";
+import troutCampRiver from "/troutCampRiver.jpg";
 
 export default function TroutCamp() {
   return (
@@ -13,7 +13,7 @@ export default function TroutCamp() {
         {/* Welcome Trout Camp */}
         <div className="info-section">
           <img
-            src="/troutCamp.jpg"
+            src={troutCamp}
             alt="Trout Camp Logo"
             className="section-image-camp"
           />
@@ -33,7 +33,7 @@ export default function TroutCamp() {
         {/* Trout Camp Links */}
         <div className="info-section">
           <img
-            src="/troutCampRiver.jpg"
+            src={troutCampRiver}
             alt="Trout Camp Logo"
             className="section-image"
           />

@@ -1,5 +1,7 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
+import damRemoval01 from "/damremoval01.jpg";
+import damRemoval02 from "/damremoval02.jpg";
+import damRemoval03 from "/damremoval03.jpg";
 
 export default function DamRemoval() {
   return (
@@ -29,19 +31,19 @@ export default function DamRemoval() {
         {/* Trout Camp Links */}
         <div className="info-section reverse">
           <img
-            src="/damremoval03.jpg"
+            src={damRemoval03}
             alt="More of the dam being taken down"
             className="section-image-three-piece"
           />
 
           <img
-            src="/damremoval02.jpg"
+            src={damRemoval02}
             alt="Group photo of those from MadDogTu who assisted in dam removal"
             className="section-image-three-piece"
           />
 
           <img
-            src="/damremoval01.jpg"
+            src={damRemoval01}
             alt="Excavator starting to remove the dam on Cox Brook"
             className="section-image-three-piece"
           />

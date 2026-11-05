@@ -1,6 +1,5 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import woolyBugger from "/woolybugger.jpeg";
 
 export default function FlyTying() {
   return (
@@ -32,7 +31,7 @@ export default function FlyTying() {
             </p>
           </div>
           <img
-            src="/woolybugger.jpeg"
+            src={woolyBugger}
             alt="Wooly bugger in a vise"
             className="section-image"
           />
@@ -40,11 +39,6 @@ export default function FlyTying() {
 
         {/* Fly Tying Links */}
         <div className="info-section reverse">
-          {/* <img
-            src="/troutCampRiver.jpg"
-            alt="Trout Camp Logo"
-            className="section-image"
-          /> */}
 
           <div className="section-text">
             <h2>Links</h2>

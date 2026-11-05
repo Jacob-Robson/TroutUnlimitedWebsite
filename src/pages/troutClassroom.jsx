@@ -1,6 +1,7 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import TroutClassroom01 from "/troutclassroom01.jpg"; 
+import TroutClassroom02 from "/troutclassroom02.jpg";
+import TroutClassroom03 from "/troutclassroom03.jpg";
 
 export default function TroutClassroom() {
   return (
@@ -37,19 +38,19 @@ export default function TroutClassroom() {
 
         <div className="info-section-three-piece reverse">
           <img
-            src="/troutclassroom01.jpg"
+            src={TroutClassroom01}
             alt="Trout In Classroom"
             className="section-image-three-piece"
           />
                     
           <img
-            src="/troutclassroom02.jpg"
+            src={TroutClassroom02}
             alt="Trout In Classroom netting in the river with students"
             className="section-image-three-piece"
           />
           
           <img
-            src="/troutclassroom03.jpg"
+            src={TroutClassroom03}
             alt="Trout In Classroom"
             className="section-image-three-piece"
           />

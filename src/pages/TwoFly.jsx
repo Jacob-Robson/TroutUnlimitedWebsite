@@ -1,6 +1,6 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import TwoFlyLogo from "/2flylogo.jpg";
+import TwoFlyComp from "/2FlyComp.jpg";
 
 export default function TwoFly() {
   return (
@@ -13,7 +13,7 @@ export default function TwoFly() {
         {/* 2Fly Competition  */}
         <div className="info-section reverse">
           <img
-            src="/2FlyComp.jpg"
+            src={TwoFlyComp}
             alt="Old Creel, the trophy for the two fly competition"
             className="section-image-camp"
           />
@@ -33,7 +33,7 @@ export default function TwoFly() {
         {/* Trout Camp Links */}
         <div className="info-section reverse">
           <img
-            src="/2flylogo.jpg"
+            src={TwoFlyLogo}
             alt="Two Fly Logo"
             className="section-image"
           />

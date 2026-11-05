@@ -1,6 +1,7 @@
-import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import instagramLogo from "/instagramLogo.png";
+import facebookLogo from "/facebooklogo.png";
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
           className="social-media-container"
         >
           <img
-            src="/facebooklogo.png"
+            src={facebookLogo}
             alt="Facebook Logo"
             className="social-media"
           />
@@ -25,7 +26,7 @@ export default function Footer() {
           className="social-media-container"
         >
           <img
-            src="/instagramLogo.png"
+            src={instagramLogo}
             alt="Instagram Logo"
             className="social-media"
           />
