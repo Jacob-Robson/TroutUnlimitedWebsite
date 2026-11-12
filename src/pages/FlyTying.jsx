@@ -27,7 +27,7 @@ export default function FlyTying() {
               <br></br><br></br>
               $30 Intermediate: (6:00-8:00 PM) Dewey Building @ National Life
               <br></br>
-              Thursday March 11, 18, 15, April 1 (Weather date Thu Apr 8th)
+              Thursday March 11, 18, 25, April 1 (Weather date Thu Apr 8th)
             </p>
           </div>
           <img

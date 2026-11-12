@@ -41,7 +41,7 @@ export default function Footer() {
         <p className="footer-address">
           PO Box 892
           Montpelier
-          VT 05601
+          VT 05602
         </p>
 
 
