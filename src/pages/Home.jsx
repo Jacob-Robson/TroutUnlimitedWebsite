@@ -2,9 +2,10 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import "../components/Home/Home.css";
 import miRiver from "/miRiver.png";
-import madRiver from "/madRiver.jpg";
+import treePlanting from "/treePlanting.jpg";
 import anr from "/anr.jpg";
-import brownTrout from "/brownTrout.png";
+import brooktroutart from "/brooktroutart.jpeg";
+import vtriver from "/vtriver.jpeg";
 
 export default function Home() {
   return (
@@ -40,8 +41,8 @@ export default function Home() {
           {/* Welcome */}
           <div className="info-section">
             <img
-              src={madRiver}
-              alt="Mad River"
+              src={vtriver}
+              alt="Vermont River"
               className="section-image"
             />
 
@@ -58,8 +59,8 @@ export default function Home() {
 
           <div className="info-section reverse">
             <img
-              src={anr}
-              alt="Fishing Handling"
+              src={treePlanting}
+              alt="Tree Planting alog the river"
               className="section-image"
             />
 
@@ -75,8 +76,8 @@ export default function Home() {
 
           <div className="info-section">
             <img
-              src={brownTrout}
-              alt="Brown Trout"
+              src={brooktroutart}
+              alt="Brook Trout"
               className="section-image"
             />
 

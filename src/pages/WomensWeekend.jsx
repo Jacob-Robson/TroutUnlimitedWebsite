@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import weekendDrone from "/weekendDrone.mp4";
 import weekendAll from "/weekendAll.webp";
+import weekendselfie from "/weekendSelfie.jpeg";
 
 export default function WomensWeekend() {
   return (
@@ -48,6 +48,12 @@ export default function WomensWeekend() {
 
           <img
             src={weekendAll}
+            alt="All who attended Women's Weekend 2025"
+            className="section-image-camp"
+          />
+
+          <img
+            src={weekendselfie}
             alt="All who attended Women's Weekend 2025"
             className="section-image-camp"
           />

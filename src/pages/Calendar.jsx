@@ -33,17 +33,6 @@ export default function Calendar() {
 
         <div className="event-grid">
 
-          {/* Event */}
-          <div className="card">
-            <h2>Trout Unlimited Events in Vermont</h2>
-
-            <iframe
-              src="https://tu.myeventscenter.com/calendar/2/0?mode=image&cta=REGISTER&cti=DETAILS&state=vt"
-              title="Event"
-              frameBorder="0"
-            />
-          </div>
-          
           {/* Calendar */}
           <div className="card">
             <h2>Chapter Calendar</h2>
@@ -51,7 +40,16 @@ export default function Calendar() {
             <iframe
               src="https://calendar.google.com/calendar/embed?src=355d65b0f2b3cfbb96ccb26683c0746c8ec1d47cf9fffe7530252dbb089d84fd%40group.calendar.google.com&ctz=America%2FDetroit"
               title="Calendar"
-              frameBorder="0"
+            />
+          </div>
+          
+          {/* Event */}
+          <div className="card">
+            <h2>Trout Unlimited Events in Vermont</h2>
+
+            <iframe
+              src="https://tu.myeventscenter.com/calendar/2/0?mode=image&cta=REGISTER&cti=DETAILS&state=vt"
+              title="Event"
             />
           </div>
 
