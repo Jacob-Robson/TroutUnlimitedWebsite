@@ -67,6 +67,7 @@ export default function Header() {
             <div className={`dropdown-menu ${conservationOpen ? "show" : ""}`}>
               <Link to="/damremoval" onClick={() => closeMenus()}>Dam Removal</Link>
               <Link to="/dogriverday" onClick={() => closeMenus()}>Dog River Day</Link>
+              <Link to="/jockeyhollow" onClick={() => closeMenus()}>Jockey Hollow</Link>
               <Link to="/treeplanting" onClick={() => closeMenus()}>Tree Planting</Link>
             </div>
             

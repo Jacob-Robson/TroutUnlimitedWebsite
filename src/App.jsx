@@ -14,6 +14,7 @@ import FlyTying from "./pages/FlyTying";
 import TreePlanting from "./pages/TreePlanting";
 import DamRemoval from "./pages/DamRemoval";
 import DogRiverDay from "./pages/DogRiverDay";
+import JockeyHollow from "./pages/JockeyHollow";
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/treeplanting" element={<TreePlanting />}/>
         <Route path="/damremoval" element={<DamRemoval />}/>
         <Route path="/dogriverday" element={<DogRiverDay />}/>
+        <Route path="/jockeyhollow" element={<JockeyHollow />}/>
       </Routes>
 
       <Footer />
